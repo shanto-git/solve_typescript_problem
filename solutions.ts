@@ -6,8 +6,7 @@ function filterEvenNumbers(numbers : number[]): number[]{
     return numbers.filter(number => number % 2 === 0);
 }
 
-const result = filterEvenNumbers([1, 2, 3, 4, 5, 6]);
- console.log(result);
+ console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
 
 
  
@@ -20,5 +19,26 @@ function reverseString(strings : string) : string{
     return strings.split("").reverse().join("");
 };
 
-const revers_result = reverseString('typescript');
-console.log(revers_result);
+console.log(reverseString('typescript'));
+
+
+//Problem 3:Define a union type StringOrNumber and create a function checkType that uses type guards to return "String" if the input is a string or "Number" if the input is a number.
+
+
+type StringOrNumber = number | string;
+
+let checkType = (type:StringOrNumber)=>{
+    if( typeof type === "string"){
+        return "String";
+    }
+    else{
+        return "Number"
+    }
+}
+
+console.log(checkType("Hello"));
+console.log(checkType(42));
+
+
+
+
