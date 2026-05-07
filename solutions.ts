@@ -39,3 +39,23 @@ const getProperty = <T>(obj: T, key: keyof T) => {
   return obj[key];
 };
 console.log(getProperty(user, "name"));
+
+//Problem 5: Define an interface Book with properties title, author, and publishedYear. Create a function toggleReadStatus that accepts a Book object and returns a new object with an added isRead property (boolean), defaulting to true.
+
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+}
+
+ function toggleReadStatus(b: Book){
+    return {
+      ...b,
+      isRead: true
+    }
+
+ }
+
+ const myBook:Book = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 }
+
+ console.log(toggleReadStatus(myBook));
