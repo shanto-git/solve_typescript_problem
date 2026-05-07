@@ -2,8 +2,8 @@
 
 //Solve :
 
-function filterEvenNumbers(numbers: number[]): number[] {
-  return numbers.filter((number) => number % 2 === 0);
+function filterEvenNumbers(numbers: number[]){
+  return numbers.filter(number => number % 2 === 0);
 }
 
 console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
@@ -84,9 +84,9 @@ class Student extends Person{
 
   getDetails(){
     return{
-    name:this.name,
-    age: this.age,
-    grade: this.grade
+    Name:this.name,
+    Age: this.age,
+    Grade: this.grade
   }
   }
 
@@ -94,3 +94,13 @@ class Student extends Person{
 
 const student = new Student("Alice", 20, "A");
 console.log(student.getDetails());
+
+
+
+//Problem 7: Create a function getIntersection that takes two arrays of numbers and returns a new array containing only the elements that are present in both arrays.
+
+
+function getIntersection(numbers1: number[],numbers2:number[]){
+  return numbers1.filter(item => numbers2.includes(item))
+}
+console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
