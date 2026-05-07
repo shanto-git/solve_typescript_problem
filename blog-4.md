@@ -1,4 +1,4 @@
-Object-Oriented Programming বা OOP-এর চারটি Pillar কীভাবে বড় TypeScript Project-এর Complexity কমায়?
+Title: Object-Oriented Programming বা OOP-এর চারটি Pillar কীভাবে বড় TypeScript Project-এর Complexity কমায়?
 
 
 একটা বড় Application-এর Structure যদি ভালো না হয় তা হলে ওই Application-এর ক্ষেত্রে Code manage করা কঠিন হয়ে যায়।
@@ -65,3 +65,6 @@ abstract class Payment {
 Encapsulation হলো এমন একটা জিনিস যেখানে তুমি তোমার জিনিসপত্র একটা লক করা বক্সে রাখলে, বাইরে থেকে কেউ সরাসরি সেটা নাড়াতে পারবে না শুধু তুমি যদি দরজা খুলো, তখনই ভেতরের জিনিস ব্যবহার করা যাবে।
 অর্থাৎ, যেখানে data এবং related methods একই class-এর ভিতরে রাখা হয় এবং direct access নিয়ন্ত্রণ করা হয়।
 
+
+সুতরাং, OOP-এর চারটি pillar একটি বড় TypeScript project-এ complexity কমাতে বিশাল ভূমিকা রাখে।
+এগুলো code-কে modular, reusable, scalable এবং maintainable করে তোলে।
